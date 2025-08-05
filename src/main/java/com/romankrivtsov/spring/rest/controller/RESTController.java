@@ -13,7 +13,8 @@ public class RESTController {
 
     private final EmployeeService employeeService;
 
-    public RESTController(@Autowired EmployeeService employeeService) {
+    @Autowired
+    public RESTController(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 

@@ -13,7 +13,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
     private final SessionFactory sessionFactory;
 
-    public EmployeeDAOImpl(@Autowired SessionFactory sessionFactory) {
+    @Autowired
+    public EmployeeDAOImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
